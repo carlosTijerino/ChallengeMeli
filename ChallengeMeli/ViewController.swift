@@ -12,7 +12,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("Hola)
+        print("Hola")
         
         let delayTime = DispatchTime.now() + 3.0
           
