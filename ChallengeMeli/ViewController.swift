@@ -11,9 +11,27 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        let delayTime = DispatchTime.now() + 3.0
+          
+        DispatchQueue.main.asyncAfter(deadline: delayTime, execute: {
+              self.openController()
+        })
     }
-
+    
+    //MARK: -openController
+    
+    func openController(){
+        
+        let storyBoard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyBoard.instantiateViewController(identifier: "ProductSearch") as! ProductSearchListViewController
+        
+        let navigationController = UINavigationController(rootViewController: controller)
+            navigationController.modalPresentationStyle = .fullScreen
+        
+        self.present(navigationController, animated: true, completion: nil)
+            
+    }
 
 }
 
