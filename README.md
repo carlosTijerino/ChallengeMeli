@@ -2,7 +2,7 @@
 
 Desarrollar una APP utilizando las APIs de Mercado Libre, que le permita a un usuario ver los detalles de un producto
 
-***Descripción de la aplicación***
+# ***Descripción de la aplicación***
 
 La aplicación cuenta con 3 pantallas
   * La pantalla de busqueda: 
@@ -14,9 +14,9 @@ La aplicación cuenta con 3 pantallas
   * Detalle del producto: 
       Muestra la información detallada del producto seleccionado, consta de la condición del producto (nuevo o usado), el titulo del producto, un carrousel de imagenes del producto, el precio del producto, el stock cantidad de articulos disponibles, la descripción del producto, información de el vendedor (ubicación), las publicaciones del vendedor, e información del producto.
       
-***Detalles técnicos***
+# ***Detalles técnicos***
 
-Versión de xcode 13.0
+Versión de xcode: 13.0
 
 Lenguaje utilizado: Swift
 
@@ -24,11 +24,11 @@ Arquitectura utilizada: MVC
 
 Versión minima de iOS: 8.0
 
-***Librerias utilizadas***
+# ***Librerias utilizadas***
 
 Reachability - Para obtener la información de conectividad de internet
 
-***Endpoints utilizados***
+# ***Endpoints utilizados***
 
 * static let apiMELI = "https://api.mercadolibre.com" ----> API de Mercado Libre
 
@@ -40,7 +40,7 @@ Reachability - Para obtener la información de conectividad de internet
 
 * static let domain_discovery = "/sites/MLA/domain_discovery/search?" ----> obtener sugerencias de categorioas
 
-***Test***
+# ***Test***
 
 Se creo la pruebas automatizadas para el flujo de una busqueda y ver el detalle del producto
 
@@ -48,10 +48,10 @@ Se utilizo XCTest para realizar la prueba automatizada
 
 La prueba fue ejecutada con exito
 
-***Notas***
+# ***Notas***
 
-*El código se encuenta documentado
+* El código se encuenta documentado
 
-*No se pide ningún permiso ya que no accedemos a ningún dato personal del dispositivo como acceso a cámara, fotos, localización o datos personales
+* No se pide ningún permiso ya que no accedemos a ningún dato personal del dispositivo como acceso a cámara, fotos, localización o datos personales
     
     
