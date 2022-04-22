@@ -46,11 +46,15 @@ Reachability - Para obtener la información de conectividad de internet
 
 # ***Test***
 
-Se creo la pruebas automatizadas para el flujo de una busqueda y ver el detalle del producto
+* La aplicación se probo en diferentes versiones de simuladores y sistemas operativos de iOS
 
-Se utilizo XCTest para realizar la prueba automatizada
+* La aplicación se probo en el darkMode de iOS
 
-La prueba fue ejecutada con exito
+* Se creo la pruebas automatizadas para el flujo de una busqueda y ver el detalle del producto
+
+* Se utilizo XCTest para realizar la prueba automatizada
+
+* La prueba fue ejecutada con exito
 
 # ***Notas***
 
