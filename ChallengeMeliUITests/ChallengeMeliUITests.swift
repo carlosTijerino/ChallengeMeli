@@ -52,5 +52,5 @@ class ChallengeMeliUITests: XCTestCase {
     }
     
     //MARK: -
-    //ccc
+    
 }
