@@ -22,6 +22,8 @@ Lenguaje utilizado: Swift
 
 Arquitectura utilizada: MVC
 
+Diseño de vistas: StoryBoards y xib
+
 Versión minima de iOS: 8.0
 
 # ***Librerias utilizadas***
