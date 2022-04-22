@@ -12,7 +12,7 @@ La aplicación cuenta con 3 pantallas
       Muestra la imagen, el nombre y el precio de una lista de productos encontrados de acuerdo a la palabra buscada
       
   * Detalle del producto: 
-      Muestra la información detallada del producto seleccionado, consta de la condición del producto (nuevo o usado), el titulo del producto, un carrousel de imagenes del producto, el precio del producto, el stock cantidad de articulos disponibles, la descripción del producto, información de el vendedor (ubicación), las publicaciones del vendedor, e información del producto.
+      Muestra la información detallada del producto seleccionado, consta de la condición del producto (nuevo o usado), el titulo del producto, un carrousel de imagenes del producto, el precio del producto, el stock cantidad de articulos disponibles, la descripción del producto, información del vendedor (ubicación), las publicaciones del vendedor, e información del producto.
       
 # ***Detalles técnicos***
 
