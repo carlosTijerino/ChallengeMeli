@@ -56,6 +56,10 @@ La prueba fue ejecutada con exito
 
 * El código se encuenta documentado
 
+* La cantidad de productos mostrados en la pantalla de listado de productos encontrados se utilizo un LIMIT = 20 para mostrar solo los primeros 20 items obtenidos
+
+* Los items obtenidos del vendedor se utilizo un LIMIT = 2 para mostrar solo los primeros 2 items obtenidos 
+
 * No se pide ningún permiso ya que no accedemos a ningún dato personal del dispositivo como acceso a cámara, fotos, localización o datos personales
     
     
