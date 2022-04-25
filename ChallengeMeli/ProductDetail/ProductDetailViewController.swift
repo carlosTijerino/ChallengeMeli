@@ -65,6 +65,14 @@ class ProductDetailViewController: UIViewController,UITableViewDataSource, UITab
     
     func setUpUI(){
         
+        if #available(iOS 13.0, *) {
+            activityIndicator.style = .large
+        }
+        
+        else {
+            activityIndicator.style = .gray
+        }
+        
         carousel.delegate = self
         
         lblProductName.text = productData.title
@@ -543,13 +551,29 @@ class ProductDetailViewController: UIViewController,UITableViewDataSource, UITab
             cell?.lblAttributeValue.text = attributes[indexPath.row].value_name
         
             if(indexPath.row % 2 == 0){
-                cell!.viewAttributeName.backgroundColor = UIColor.init(named: "AttributeNameColor")
-                cell!.viewAttributeValue.backgroundColor = UIColor.init(named: "AttributeValueColor")
+                if #available(iOS 11.0, *) {
+                    cell!.viewAttributeName.backgroundColor = UIColor.init(named: "AttributeNameColor")
+                    cell!.viewAttributeValue.backgroundColor = UIColor.init(named: "AttributeValueColor")
+                } else {
+                    cell!.viewAttributeName.backgroundColor = UIColor(red: 176/255.0, green: 176/255.0, blue: 176/255.0, alpha: 1.0)
+                    cell!.viewAttributeValue.backgroundColor = UIColor(red: 229/255.0, green: 229/255.0, blue: 229/255.0, alpha: 1.0)
+                    
+                }
+                
             }
         
             else{
-                cell!.viewAttributeName.backgroundColor = UIColor.init(named: "AttributeNameColor2")
-                cell!.viewAttributeValue.backgroundColor = UIColor.init(named: "AttributeValueColor2")
+                
+                if #available(iOS 11.0, *) {
+                    cell!.viewAttributeName.backgroundColor = UIColor.init(named: "AttributeNameColor2")
+                    cell!.viewAttributeValue.backgroundColor = UIColor.init(named: "AttributeValueColor2")
+                } else {
+                    cell!.viewAttributeName.backgroundColor = UIColor(red: 209/255.0, green: 209/255.0, blue: 209/255.0, alpha: 1.0)
+                    cell!.viewAttributeValue.backgroundColor = UIColor(red: 248/255.0, green: 248/255.0, blue: 248/255.0, alpha: 1.0)
+                    
+                }
+                
+                
             }
             
             DispatchQueue.main.async {

@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -39,11 +40,11 @@
                         </constraints>
                     </view>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="68X-9c-jTQ">
-                        <rect key="frame" x="159" y="0.0" width="160" height="40"/>
+                        <rect key="frame" x="159" y="0.0" width="160" height="37"/>
                         <color key="backgroundColor" white="0.91973461747980445" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="160" id="Syh-li-H92"/>
-                            <constraint firstAttribute="height" constant="40" id="oXP-Gd-Pdx"/>
+                            <constraint firstAttribute="height" constant="37" id="oXP-Gd-Pdx"/>
                         </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Canvas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q90-9F-mw0">
@@ -65,7 +66,7 @@
                     <constraint firstItem="eJV-ZZ-tIS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="CiQ-BY-NMp"/>
                     <constraint firstAttribute="trailing" secondItem="Q90-9F-mw0" secondAttribute="trailing" constant="6" id="DxA-OQ-DgR"/>
                     <constraint firstItem="68X-9c-jTQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="159" id="OrM-rW-5eu"/>
-                    <constraint firstAttribute="bottom" secondItem="68X-9c-jTQ" secondAttribute="bottom" constant="-3" id="hJJ-sa-H0L"/>
+                    <constraint firstAttribute="bottom" secondItem="68X-9c-jTQ" secondAttribute="bottom" id="hJJ-sa-H0L"/>
                     <constraint firstItem="eJV-ZZ-tIS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ng0-QA-6gC"/>
                     <constraint firstAttribute="trailing" secondItem="68X-9c-jTQ" secondAttribute="trailing" id="tYC-bW-PYE"/>
                 </constraints>

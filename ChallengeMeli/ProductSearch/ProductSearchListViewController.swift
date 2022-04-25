@@ -32,7 +32,6 @@ class ProductSearchListViewController: UIViewController,UITableViewDataSource, U
         title = "Buscar Producto"
        
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black]
-        navigationItem.hidesSearchBarWhenScrolling = false
         
         let vc = storyboard?.instantiateViewController(withIdentifier: "SearchTableView") as! SearchViewController
         
@@ -57,6 +56,12 @@ class ProductSearchListViewController: UIViewController,UITableViewDataSource, U
     //MARK: - setUpUI
     
     func setUpUI(){
+        
+        if #available(iOS 13.0, *) {
+            activityIndicator.style = .large
+        } else {
+            activityIndicator.style = .gray
+        }
         
         self.resultsView.layer.shadowColor = UIColor.gray.cgColor
         self.resultsView.layer.shadowOpacity = 1

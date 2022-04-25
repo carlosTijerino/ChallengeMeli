@@ -140,7 +140,15 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     //MARK: - updateSearchResults
     func updateSearchResults(for searchController: UISearchController) {
             
-        searchController.searchBar.searchTextField.textColor = UIColor.black
+        if #available(iOS 13.0, *) {
+            searchController.searchBar.searchTextField.textColor = UIColor.black
+        }
+        
+        else {
+            if let searchField = searchController.searchBar.value(forKey: "searchField") as? UITextField {
+                searchField.textColor = UIColor.black
+            }
+        }
         
         guard let text = searchController.searchBar.text else{
             return
