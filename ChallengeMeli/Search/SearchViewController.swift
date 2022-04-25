@@ -126,10 +126,15 @@ class SearchViewController: UIViewController,UITableViewDataSource, UITableViewD
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let textSearch = listSuggestions[indexPath.row].domain_name
         
-        self.delegate?.sendDataToFirstViewController(myData: textSearch)
-        self.dismiss(animated: true, completion: nil)
+        if listSuggestions.count > 0 && indexPath.row < listSuggestions.count {
+            
+            let textSearch = listSuggestions[indexPath.row].domain_name
+            
+            self.delegate?.sendDataToFirstViewController(myData: textSearch)
+            self.dismiss(animated: true, completion: nil)
+        }
+        
     }
     
     //MARK: - updateSearchResults

@@ -33,8 +33,14 @@ class ChallengeMeliUITests: XCTestCase {
         let app = XCUIApplication()
             app.launch()
         
+        sleep(2)
+        
         let searchSearchField = app.navigationBars["Buscar Producto"]/*@START_MENU_TOKEN@*/.searchFields["Search"]/*[[".staticTexts[\"Buscar Producto\"].searchFields[\"Search\"]",".searchFields[\"Search\"]"],[[[-1,1],[-1,0]]],[0]]@END_MENU_TOKEN@*/
             searchSearchField.tap()
+            searchSearchField.tap()
+        
+        sleep(5)
+        
             searchSearchField.typeText("Monitor")
         
         XCUIApplication().tables["Search results"].cells.element(boundBy: 0).tap()
