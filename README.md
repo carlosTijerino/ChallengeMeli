@@ -73,5 +73,11 @@ Reachability - Para obtener la información de conectividad de internet
 * Los items obtenidos del vendedor se utilizo un LIMIT = 2 para mostrar solo los primeros 2 items obtenidos 
 
 * No se pide ningún permiso ya que no accedemos a ningún dato personal del dispositivo como acceso a cámara, fotos, localización o datos personales
+
+
+#***Diagramas***
+
+<img width="378" alt="src_!" src="https://user-images.githubusercontent.com/64485611/165118404-eb5065c5-7115-45c4-a6bd-bcac9a86123d.png">
     
+
     
