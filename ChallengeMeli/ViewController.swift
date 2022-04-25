@@ -25,23 +25,12 @@ class ViewController: UIViewController {
         
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         
-        if #available(iOS 13.0, *) {
-            let controller = storyBoard.instantiateViewController(identifier: "ProductSearch") as! ProductSearchListViewController
-            
-            let navigationController = UINavigationController(rootViewController: controller)
-                navigationController.modalPresentationStyle = .fullScreen
-            
-            self.present(navigationController, animated: true, completion: nil)
-
-        }
+        let controller = storyBoard.instantiateViewController(withIdentifier: "ProductSearch") as! ProductSearchListViewController
         
-        else {
-            let controller = storyBoard.instantiateViewController(withIdentifier: "ProductSearch") as! ProductSearchListViewController
-            let navigationController = UINavigationController(rootViewController: controller)
+        let navigationController = UINavigationController(rootViewController: controller)
                     navigationController.modalPresentationStyle = .fullScreen
                 
-            self.present(navigationController, animated: true, completion: nil)
-        }
+        self.present(navigationController, animated: true, completion: nil)
         
     }
 
