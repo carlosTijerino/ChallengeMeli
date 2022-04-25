@@ -34,7 +34,7 @@ Diseño de vistas: StoryBoards y xib
 
 Orientación del dispositivo: Portrait
 
-Versión minima de iOS: 8.0
+Versión minima de iOS: 9.0
 
 # ***Librerias utilizadas***
 
