@@ -72,6 +72,8 @@ Reachability - Para obtener la información de conectividad de internet
 
 * Los items obtenidos del vendedor se utilizo un LIMIT = 2 para mostrar solo los primeros 2 items obtenidos 
 
+* SiteID utilizado para obtener la información MLA - Argentina
+
 * No se pide ningún permiso ya que no accedemos a ningún dato personal del dispositivo como acceso a cámara, fotos, localización o datos personales
 
 
