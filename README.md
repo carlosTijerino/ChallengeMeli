@@ -7,13 +7,17 @@ Desarrollar una APP utilizando las APIs de Mercado Libre, que le permita a un us
 La aplicación cuenta con 3 pantallas
   * La pantalla de busqueda: 
       La cual ingresas el nombre de un producto ó palabra clave (query) y muestra algunas sugerencias de productos para buscar el detalle de un producto
-      
+      <img width="378" alt="src_!" src="https://user-images.githubusercontent.com/64485611/165112040-da2d7880-6adb-49c5-9c72-8faf465b77c0.png">
+
   * Listado de los productos encontrados: 
       Muestra la imagen, el nombre y el precio de una lista de productos encontrados de acuerdo a la palabra buscada
+      ![src_2](https://user-images.githubusercontent.com/64485611/165111975-90e87219-8d2f-4635-b111-e73461de6587.png)
+
       
   * Detalle del producto: 
       Muestra la información detallada del producto seleccionado, consta de la condición del producto (nuevo o usado), el titulo del producto, un carrousel de imagenes del producto, el precio del producto, el stock cantidad de articulos disponibles, la descripción del producto, información del vendedor (ubicación), las publicaciones del vendedor, e información del producto.
-      
+      ![src_3](https://user-images.githubusercontent.com/64485611/165111780-423d0ec5-5e92-4425-a1af-2e22f2d296c6.png)
+
 # ***Detalles técnicos***
 
 Versión de xcode: 13.0
