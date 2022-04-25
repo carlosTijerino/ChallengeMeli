@@ -12,8 +12,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        print("hola")
-        
         let delayTime = DispatchTime.now() + 3.0
           
         DispatchQueue.main.asyncAfter(deadline: delayTime, execute: {
